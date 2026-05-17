@@ -1,4 +1,4 @@
-const timer = 1;
+const timer = 2;
 let amountTime = timer * 60;
 
 function calculateTime() {
@@ -9,7 +9,7 @@ function calculateTime() {
     minutes = String(minutes).padStart(2, '0');
     seconds = String(seconds).padStart(2, '0');
 
-    if (seconds < 10) {
+    if (seconds < 10 ) {
         seconds = '0' + seconds;
     }
 

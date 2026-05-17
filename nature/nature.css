@@ -5,10 +5,13 @@
 
 #countdown {
     background: linear-gradient(to right, #c6dc8a, #069939);
+    opacity: 0.9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 180px;
+    text-align: center;
     font-size: 60px;
-    margin-top: 100px;
-    border-radius: 20px;
     padding: 30px;
+    border-radius: 20px;
     font-variant-numeric: tabular-nums;
 }
 
