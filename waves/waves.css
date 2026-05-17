@@ -13,6 +13,7 @@
     padding: 30px;
     border-radius: 20px;
     font-variant-numeric: tabular-nums;
+    font-family: Roboto, monospace;
 }
 
 #myVideo {
