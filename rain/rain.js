@@ -6,6 +6,9 @@ function calculateTime() {
     let minutes = Math.floor(amountTime / 60);
     let seconds = amountTime % 60;
 
+    minutes = String(minutes).padStart(2, '0');
+    seconds = String(seconds).padStart(2, '0');
+
     if (seconds < 10) {
         seconds = '0' + seconds;
     }
