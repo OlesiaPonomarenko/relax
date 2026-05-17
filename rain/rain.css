@@ -10,6 +10,8 @@
     border-radius: 20px;
     padding: 30px;
     font-variant-numeric: tabular-nums;
+    width: 3.5ch;
+    text-align: center;
 }
 
 #myVideo {
