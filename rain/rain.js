@@ -7,7 +7,7 @@ function calculateTime() {
     let seconds = amountTime % 60;
 
     minutes = String(minutes).padStart(2, '0');
-    seconds = String(seconds).padStart(2, '0');
+    
 
     if (seconds < 10 ) {
         seconds = '0' + seconds;
@@ -19,7 +19,7 @@ function calculateTime() {
      if (amountTime < 0) {
         stopTimer();
         amountTime = 0;
-        countdown.textContent = 'Relax complete 🌊';
+        countdown.textContent = 'Relax complete';
         setTimeout(() => {
        window.location.href = '/index.html';
 ;
