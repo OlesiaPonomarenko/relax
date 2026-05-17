@@ -1,4 +1,4 @@
-const timer = 5;
+const timer = 1;
 let amountTime = timer * 60;
 
 function calculateTime() {
@@ -16,11 +16,24 @@ function calculateTime() {
     if (amountTime < 0) {
         stopTimer();
         amountTime = 0;
+        document.body.innerHTML = '<img src="./video/rob-mulally-oacHEtIlXsA-unsplash.jpg">';
+        setTimeout(() => {
+       window.location.href = '/index.html';
+;
+}, 10000);
     }
 }
+
+
 
 function stopTimer() {
     clearInterval(timerId);
 }
+
+const audio = document.querySelector('#player');
+
+document.addEventListener('click', () => {
+    audio.play();
+}); 
 
 let timerId = setInterval(calculateTime, 1000);

@@ -1,4 +1,4 @@
-const timer = 5;
+const timer = 1;
 let amountTime = timer * 60;
 
 function calculateTime() {
@@ -13,14 +13,25 @@ function calculateTime() {
     countdown.textContent = `${minutes} : ${seconds}`;
     amountTime--;
 
-    if (amountTime < 0) {
+     if (amountTime < 0) {
         stopTimer();
         amountTime = 0;
+        countdown.textContent = 'Relax complete 🌊';
+        setTimeout(() => {
+       window.location.href = '/index.html';
+;
+}, 5000);
     }
 }
 
 function stopTimer() {
     clearInterval(timerId);
 }
+
+const audio = document.querySelector('#player');
+
+document.addEventListener('click', () => {
+    audio.play();
+});
 
 let timerId = setInterval(calculateTime, 1000);
