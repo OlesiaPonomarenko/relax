@@ -20,7 +20,7 @@ function calculateTime() {
         amountTime = 0;
         document.body.innerHTML = '<img src="./video/rob-mulally-oacHEtIlXsA-unsplash.jpg">';
         setTimeout(() => {
-       window.location.href = '/index.html';
+       window.location.href = '../index.html';
 ;
 }, 10000);
     }

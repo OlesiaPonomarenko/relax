@@ -17,7 +17,7 @@ function calculateTime() {
         amountTime = 0;
         countdown.textContent = 'Finish';
         setTimeout(() => {
-       window.location.href = '/index.html';
+       window.location.href = '../index.html';
 ;
 }, 5000);
     }
