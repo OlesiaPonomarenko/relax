@@ -13,7 +13,7 @@ function calculateTime() {
         seconds = '0' + seconds;
     }
 
-    countdown.textContent = `${minutes} : ${seconds}`;
+    countdown.textContent = `${minutes}:${seconds}`;
     amountTime--;
 
      if (amountTime < 0) {

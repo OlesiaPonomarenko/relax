@@ -9,7 +9,7 @@ function calculateTime() {
     minutes = String(minutes).padStart(2, '0');
     seconds = String(seconds).padStart(2, '0');
 
-    countdown.textContent = `${minutes} : ${seconds}`;
+    countdown.textContent = `${minutes}:${seconds}`;
     amountTime--;
 
     if (amountTime < 0) {
